@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Pocketsphinx Voice Integration
+Bundle-SymbolicName: org.openhab.voice.pocketsphinx
+Bundle-Vendor: openHAB
+Bundle-Version: 2.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ClassPath: .,
+ lib/pocketsphinx-java-1.0.0-SNAPSHOT.jar,
+ lib/rxjava-2.0.3.jar
+Import-Package: 
+ org.eclipse.smarthome.core.voice,
+ org.eclipse.smarthome.core.audio,
+ org.eclipse.smarthome.core.events,
+ org.eclipse.smarthome.core.library.types,
+ org.osgi.framework,
+ org.slf4j
+Service-Component: OSGI-INF/*.xml
+Bundle-ActivationPolicy: lazy

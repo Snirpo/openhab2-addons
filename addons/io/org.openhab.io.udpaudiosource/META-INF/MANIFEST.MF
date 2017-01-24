@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: UDPAudioSource
+Bundle-SymbolicName: org.openhab.io.udpaudiosource
+Bundle-Vendor: openHAB
+Bundle-Version: 2.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ClassPath: .
+Import-Package: 
+ org.apache.commons.collections,
+ org.apache.commons.io,
+ org.eclipse.smarthome.core.audio,
+ org.eclipse.smarthome.core.events,
+ org.eclipse.smarthome.core.library.types,
+ org.osgi.framework,
+ org.slf4j
+Service-Component: OSGI-INF/*.xml
+Bundle-ActivationPolicy: lazy

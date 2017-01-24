@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Voice Interpreter
+Bundle-SymbolicName: org.openhab.voice.interpreter
+Bundle-Version: 2.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Vendor: openHAB
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Service-Component: OSGI-INF/*.xml
+Import-Package: org.eclipse.smarthome.core.audio,
+ org.eclipse.smarthome.core.events,
+ org.eclipse.smarthome.core.library.types,
+ org.eclipse.smarthome.core.types,
+ org.eclipse.smarthome.core.voice,
+ org.eclipse.smarthome.core.voice.text,
+ org.osgi.framework,
+ org.slf4j
+Bundle-ActivationPolicy: lazy
